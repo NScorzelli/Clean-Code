@@ -1,2 +1,2 @@
-export * from '../protocols/email-validator'
-export * from '../protocols/http'
+export * from './email-validator'
+export * from './http'
