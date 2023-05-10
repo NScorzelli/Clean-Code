@@ -133,4 +133,4 @@ dist
 
 #globalConfig
 
-globalConfig.json
+./globalConfig.json
