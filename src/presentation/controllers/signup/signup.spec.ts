@@ -212,4 +212,17 @@ describe('SignUp Controller', () => {
 
     expect(httpResponse).toEqual(ok(makeFakeAccount()))
   })
+
+  // test('should call validation with correct values', async () => {
+  //   const { sut, validationStub } = makeSut()
+  //   const addSpy = jest.spyOn(validationStub, 'validate')
+
+  //   await sut.handle(makeFakeRequest())
+
+  //   expect(addSpy).toHaveBeenCalledWith({
+  //     name: 'valid_name',
+  //     email: 'any_email@gmail.com',
+  //     password: 'valid_password'
+  //   })
+  // })
 })
