@@ -3,9 +3,9 @@ import { Authentication, AuthenticationModel, LoadAccountByEmailRepository, Hash
 export class DbAuthentication implements Authentication {
   constructor (
     private readonly loadAccountByEmailRepository: LoadAccountByEmailRepository,
-    private readonly hashComparer: HashComparer,
+    private readonly updateAccessTokenRepository: UpdateAccessTokenRepository,
     private readonly tokenGenerator: TokenGenerator,
-    private readonly updateAccessTokenRepository: UpdateAccessTokenRepository
+    private readonly hashComparer: HashComparer
   ) {}
 
   async auth (authentication: AuthenticationModel): Promise<string> {

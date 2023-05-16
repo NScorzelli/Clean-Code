@@ -62,7 +62,7 @@ const makeSut = (): SutTypes => {
   const tokenGeneratorStub = makeTokenGenerator()
   const loadAccountByEmailRepositoryStub = makeLoadAccountEmailByRepository()
   const hashComparerStub = makeHashCompare()
-  const sut = new DbAuthentication(loadAccountByEmailRepositoryStub, hashComparerStub, tokenGeneratorStub, updateAccessTokenRepositoryStub)
+  const sut = new DbAuthentication(loadAccountByEmailRepositoryStub, updateAccessTokenRepositoryStub, tokenGeneratorStub, hashComparerStub)
 
   return {
     sut,
